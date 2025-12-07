@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shortie | XmerOriginals</title>
+    <link rel="shortcut icon" href="https://xmeroriginals.com/resources/XmerOriginals%20Logo%20-%20Klasik%20T2.png"
+        type="image/x-icon" />
+    <meta name="description" content="XmerOriginals — Shortie" />
+    <meta property="og:title" content="Shortie | XmerOriginals" />
+    <meta property="og:description" content="XmerOriginals — Shortie" />
+    <meta property="og:image" content="https://shortie.xmeroriginals.com/resources/SHORTIE-Logo.png" />
+    <script src="lib/tailwind.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#111827",
+                        "primary-dark": "#f3f4f6",
+                        accent: "#3b82f6",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Lexend Deca", "sans-serif"],
+                    },
+                    animation: {
+                        shake: "shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite",
+                    },
+                    keyframes: {
+                        shake: {
+                            "10%, 90%": { transform: "translate3d(-1px, 0, 0)" },
+                            "20%, 80%": { transform: "translate3d(2px, 0, 0)" },
+                            "30%, 50%, 70%": { transform: "translate3d(-2px, 0, 0)" },
+                            "40%, 60%": { transform: "translate3d(2px, 0, 0)" },
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "XmerOriginals",
+          "url": "https://xmeroriginals.com",
+          "logo": "https://xmeroriginals.com/resources/XmerOriginals%20Logo%20-%20Klasik%20T2.png"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Redirecting...",
+          "url": "https://xmeroriginals.com/shortie.html"
+        }
+      ]
+    }
+    </script>
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 font-body transition-colors duration-300 flex flex-col min-h-screen">
+
+    <main class="flex-grow flex items-center justify-center px-4 py-20 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+            <div
+                class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob">
+            </div>
+            <div
+                class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-400/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000">
+            </div>
+        </div>
+
+        <div class="w-full max-w-md">
+            <div
+                class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md rounded-3xl p-8 border border-gray-200 dark:border-gray-700 shadow-2xl text-center relative overflow-hidden">
+
+                <div id="view-loading">
+                    <div class="mb-6 text-primary dark:text-white inline-block">
+                        <svg class="w-16 h-16 mx-auto animate-shake" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                            </path>
+                            <path
+                                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                            </path>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                        </svg>
+                    </div>
+
+                    <h1 id="status-title" class="font-display text-lg sm:text-2xl font-bold mb-[1px]">Motorlar
+                        Isınıyor...</h1>
+                    <p id="status-desc" class="text-gray-600 dark:text-gray-400 text-sm sm:text-base mb-8">Rotayı
+                        hesaplıyoruz, sıkı tutun!</p>
+
+                    <div class="w-full h-1 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
+                        <div id="progress-bar"
+                            class="h-full bg-blue-600 dark:bg-blue-400 w-0 transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(59,130,246,0.5)]">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="view-troll" class="hidden">
+                    <img src="https://yyf.mubilop.com/file/a5b06ecd/leylamecnun.png"
+                        class="w-full rounded-xl border border-gray-200 dark:border-gray-700 mb-6 hover:scale-105 transition-transform duration-300"
+                        alt="Şu anda buradasınız">
+                    <h1 class="font-display text-lg sm:text-2xl font-bold mb-4">Yaşasın Kaybolduk!</h1>
+                    <button id="music-btn" onclick="toggleMusic()"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 font-semibold text-sm border border-transparent hover:border-gray-200 dark:hover:border-gray-700">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="mt-8 text-xs font-bold tracking-widest text-gray-400 uppercase">
+                    © 2025 XMERORIGINALS
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <audio id="bg-music" src="https://www.myinstants.com/media/sounds/titanic-flute-fail.mp3"></audio>
+
+    <script>
+        let linkDatabase = {};
+        fetch('./links.json')
+            .then(response => response.json())
+            .then(linkDatabas => {
+                linkDatabase = linkDatabas;
+            })
+            .catch(e => console.error("Bir hata oluştu."));
+
+
+        const audio = document.getElementById('bg-music');
+        const btn = document.getElementById('music-btn');
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+                audio.currentTime = 0;
+                btn.classList.remove('ring-2', 'ring-accent');
+                btn.innerHTML = '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+                isPlaying = false;
+            } else {
+                audio.volume = 0.5;
+                audio.play().catch(e => console.log("Tarayıcı otomatik oynatmayı engelledi."));
+                btn.classList.add('ring-2', 'ring-accent');
+                btn.innerHTML = '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+                isPlaying = true;
+            }
+        }
+
+        audio.onended = function () {
+            toggleMusic();
+        };
+
+        window.onload = function () {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.classList.add('dark');
+            }
+
+            let slug = window.location.search.substring(1) || window.location.hash.substring(1);
+            if (slug.endsWith('=')) slug = slug.slice(0, -1);
+            if (slug.endsWith('/')) slug = slug.slice(0, -1);
+
+            const targetUrl = linkDatabase[slug];
+
+            if (targetUrl) {
+                const funPhrases = [
+                    { t: "Kemerleri Bağlayınız!", d: "Yola Çıkıyoruz..." },
+                    { t: "Gidiyoruz!", d: "Geri sayım başladı: 3, 2, 1..." },
+                    { t: "Yola Hazırız!", d: "İyi Yolculuklar..." },
+                    { t: "Sıradaki Durak...", d: "Sürpriz Olsun!" },
+                    { t: "Rota", d: "Yeniden Hesaplanıyor..." },
+                    { t: "Lorem", d: "Ipsum" }
+                ];
+                const randomMsg = funPhrases[Math.floor(Math.random() * funPhrases.length)];
+
+                document.getElementById('status-title').innerText = randomMsg.t;
+                document.getElementById('status-desc').innerText = randomMsg.d;
+
+                setTimeout(() => { document.getElementById('progress-bar').style.width = "100%"; }, 100);
+                setTimeout(() => { window.location.replace(targetUrl); }, 1600);
+
+            } else {
+                document.getElementById('view-loading').classList.add('hidden');
+                document.getElementById('view-troll').classList.remove('hidden');
+            }
+        };
+    </script>
+</body>
+
+</html>
